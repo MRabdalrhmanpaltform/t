@@ -233,3 +233,25 @@ footer {
 .youtube-wrapper iframe {
   pointer-events: auto;
 }
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* يمنع الضغط على لوجو يوتيوب */
+.youtube-block-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 60px;
+  z-index: 5;
+  background: transparent;
+}
+
